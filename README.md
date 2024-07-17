@@ -16,11 +16,7 @@ Prerequisites
 Google Chrome browser
 Basic knowledge of JavaScript and Chrome extensions
 Installation
-Clone the repository:
 
-sh
-Copy code
-git clone https://github.com/your-username/your-repo-name.git
 Load the extension:
 
 Open Google Chrome and go to chrome://extensions/.
