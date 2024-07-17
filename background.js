@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             const url = new URL(tabs[0].url);
             const docId = url.pathname.split('/')[3]; // Adjusted to correctly get the document ID
 
-            fetch('https://script.google.com/macros/s/AKfycbycYAys6nyik-7VMDbkHdooVdYILsFHzkuslRZXaXQ_TV7-IzTtkgtsWsWZFtVASvms/exec', {
+            fetch('** GOOGLE APP SCRIPT LINK **', {
               method: 'POST',
               headers: {
                 'Authorization': `Bearer ${token}`,
