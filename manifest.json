@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Replace Sensitive Info",
+  "version": "1.0",
+  "permissions": [
+    "identity",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/document/*",
+        "https://docs.google.com/spreadsheets/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "oauth2": {
+    "client_id": "916377960161-bol58tmt8199ebhsfosvi2nb4g2bere1.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/script.external_request",
+      "https://www.googleapis.com/auth/documents"
+    ]
+  },
+  "host_permissions": [
+    "https://script.google.com/"
+  ]
+}
